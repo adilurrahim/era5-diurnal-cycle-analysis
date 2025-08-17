@@ -24,6 +24,8 @@ Hourly 2-m air temperature data were obtained from the **ERA5 reanalysis dataset
 **Citation for dataset:**  
 Copernicus Climate Change Service (C3S). (2019). *ERA5: Fifth generation of ECMWF atmospheric reanalyses of the global climate* [Dataset]. Copernicus Climate Data Store. https://doi.org/10.24381/cds.adbb2d47  
 
-Rahim, M. A. (2025). Increasing Trend in Duration of Temperatures above the Daily Mean Temperature over the Terrestrial Earth [Code and processed data]. Zenodo. https://doi.org/10.5281/zenodo.16888541
+The processed dataset generated in this study is archived at Zenodo: https://doi.org/10.5281/zenodo.16888541
+
+All processing scripts are openly available in the GitHub repository (https://github.com/adilurrahim/era5-diurnal-cycle-analysis) and preserved with Zenodo: https://doi.org/10.5281/zenodo.16888577
 
 ---
