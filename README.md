@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1039348359.svg)](https://doi.org/10.5281/zenodo.16888577)
+
 # ERA5 Diurnal Cycle Analysis: Hours Above Daily Mean Temperature
 
 This repository contains the processing and plotting scripts used in the study:
