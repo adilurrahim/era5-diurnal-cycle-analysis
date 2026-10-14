@@ -28,6 +28,7 @@ The analysis investigates global trends, 1981–2020, in the number of hours per
 | 7 | `python/nonlinearity_variability_analysis.py` | non-linear trends and interannual variability |
 | – | `python/DurbinWatsonTest.py` | serial correlation of residuals |
 | – | `r/ggplotting_trend` | maps of trends and slopes |
+| – | `r/hourly_to_daily_NTgtT_2021.R` | original R script used in 2021 for step 2 (Python version: `02_hourly_to_daily_ntgt.py`) |
 
 **NT>T definition:** for each land grid point and UTC calendar day, the daily mean is the mean of the 24 hourly 2-m temperatures; NT>T is the number of hours with temperature above that mean.
 
