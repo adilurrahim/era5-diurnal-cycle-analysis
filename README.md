@@ -27,12 +27,16 @@ The analysis investigates global trends, 1981–2020, in the number of hours per
 | 6 | `python/fdr_analysis.py` | false discovery rate control of grid-point trends (Table S1, Figure S9) |
 | 7 | `python/nonlinearity_variability_analysis.py` | non-linear trends and interannual variability |
 | – | `python/DurbinWatsonTest.py` | serial correlation of residuals |
+| S1 | `python/driver_analysis/supplemental_driver_analysis.py` | trends of ERA5 cloud cover (total, low, high), surface solar radiation, and soil moisture (layer 1), and their pattern correlations with the NT>T trends (`<var>_trend_MM.nc`, `pattern_correlations.csv`) |
+| S2 | `python/driver_analysis/plot_supp_figures.py` | supplementary Figures S5–S8 from the driver trend files |
 | – | `r/ggplotting_trend` | maps of trends and slopes |
 | – | `r/hourly_to_daily_NTgtT_2021.R` | original R script used in 2021 for step 2 (Python version: `02_hourly_to_daily_ntgt.py`) |
 
 **NT>T definition:** for each land grid point and UTC calendar day, the daily mean is the mean of the 24 hourly 2-m temperatures; NT>T is the number of hours with temperature above that mean.
 
 **Units:** NT>T is in hours per day. Table 1 slopes are in hours per day per decade; grid-point slope maps are in hours per day per year.
+
+**Supplemental driver analysis:** uses ERA5 monthly averaged reanalysis by hour of day (single levels, 0.25°, 1981–2020). For each year the 24 hour-of-day fields of a calendar month are averaged before the Theil–Sen and Spearman trends are computed. The scripts were run on the LSU SuperMike-III cluster; set the paths in the CONFIG block at the top of each script before running elsewhere.
 
 ---
 
@@ -42,6 +46,8 @@ Hourly 2-m air temperature data were obtained from **ERA5-Land hourly data from 
 
 **Citation for dataset:**
 Muñoz Sabater, J. (2019). *ERA5-Land hourly data from 1950 to present* [Dataset]. Copernicus Climate Change Service (C3S) Climate Data Store (CDS). https://doi.org/10.24381/cds.e2161bac
+
+The supplemental driver analysis uses **ERA5 monthly averaged data on single levels** (product: monthly averaged reanalysis by hour of day): https://doi.org/10.24381/cds.f17050d7
 
 The processed dataset generated in this study is archived at Zenodo: https://doi.org/10.5281/zenodo.16888541
 
